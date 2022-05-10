@@ -1,0 +1,36 @@
+{
+  "name": "mycp-compliance",
+  "version": "1.0.0",
+  "description": "This is an application to help with CHILI publish employees. It serves no use to the general public but is made public for easy download.",
+  "bin": "./pkg/main.js",
+  "targets": {
+    "default": {
+      "source": "src/main.js",
+      "outputFormat": "commonjs",
+      "distDir": "pkg",
+      "context": "node"
+    }
+  },
+  "scripts": {
+    "build": "parcel build && pkg ./"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^8.2.4",
+    "node-fetch": "^2.6.7",
+    "pkg": "^5.6.0"
+  },
+  "devDependencies": {
+    "assert": "^2.0.0",
+    "crypto-browserify": "^3.12.0",
+    "events": "^3.3.0",
+    "parcel": "^2.5.0",
+    "path-browserify": "^1.0.1",
+    "process": "^0.11.10",
+    "stream-browserify": "^3.0.0",
+    "tty-browserify": "0.0.1",
+    "util": "^0.12.4"
+  }
+}

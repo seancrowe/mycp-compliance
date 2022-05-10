@@ -1,0 +1,5 @@
+.vscode
+.idea
+.parcel-cache
+node_modules
+pkg
